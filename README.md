@@ -55,7 +55,7 @@ stateDplot <-
 traitDplot/ stateDplot
 ```
 
-![](ExploratoryforThesis_files/figure-gfm/Plots-1.png)<!-- -->
+![](state_trait_dist.png)<!-- -->
 
 ``` r
 ggsave("state_trait_dist.png", plot=traitDplot+stateDplot, width=10, height=6)
@@ -92,6 +92,9 @@ AgeStart <-
 ggsave("HoursWeek.png", plot=HoursWeek+LastPr, width=6, height=6)
 ggsave("AgeStart.png", plot=AgeStart+Years, width=6, height=6)
 ```
+![](HoursWeek.png)<!-- -->
+
+![](AgeStarted.png)<!-- -->
 
 ``` r
 data1 <- flow[,c("Genre", "mean_CSB1", "mean_AAM1", "mean_CG1", "mean_UAF1", "mean_TC1", 
@@ -122,13 +125,13 @@ FSS <- ggplot(data2, aes(x=ind, y=values, fill=data2$`Genre`)) +
 DFS
 ```
 
-![](ExploratoryforThesis_files/figure-gfm/Boxplots2-1.png)<!-- -->
+![](DFS.png)<!-- -->
 
 ``` r
 FSS
 ```
 
-![](ExploratoryforThesis_files/figure-gfm/Boxplots2-2.png)<!-- -->
+![](FSS.png)<!-- -->
 
 ``` r
 ggsave("DFS.png", plot=DFS, width=10, height=4)
@@ -190,7 +193,7 @@ c %>%
 cc
 ```
 
-![](ExploratoryforThesis_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](plot1.png)<!-- -->
 
 ``` r
 ggsave("plot1.png", plot=cc, width=10, height=12)
